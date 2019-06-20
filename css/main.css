@@ -332,9 +332,9 @@ footer{
 		width: 100%;
 	}
 	.HomePage > #banner{
-		width: 375px;
+		width: 100%;
 		height: 270px;
-		background-size: 375px 270px;
+		background-size: 100% 270px;
 	}
 	.HomePage > #banner > .arrowButton{	
 		padding-top: 100px;
@@ -355,7 +355,9 @@ footer{
 		margin-bottom: 30px;
 	}
 	.HomePage > .popular > ul > li, .HomePage > .discount > ul > li{
-		padding:0 10% 20px 10%;		
+		/* padding:0 10% 20px 10%; */
+		margin: 0 auto 20px auto;
+		float: none;		
 	}
 	/* ================================================================================== */
 	/* RoomPage*/
@@ -364,20 +366,24 @@ footer{
 		width: 100%;
 	}
 	.Room > .RoomBanner{
-		width: 375px;
+		width: 100%;
 		height: 270px;
-		background-size: 375px 270px;
+		background-size: 100% 270px;
 	}
 	.Room > .categories{
 		padding: 0;
 		width: 100%;
+		float: none;
 	}
 	.Room > #RoomList{
 		width: 100%;
 		float: none;		
 	}
 	.Room > #RoomList > .section{
-		margin: 0 10%;
+		width: 300px;
+		margin-left: 0;
+		margin: 0 auto;
+		float: none;
 	}
 	/* ================================================================================== */
 	/* LoginPage*/
@@ -387,10 +393,14 @@ footer{
 		height: auto;
 	}
 	.LoginPage > .login{
+		width: 100%;
 		margin: 0;
 	}
 	.LoginPage > .login > input{
 		width: 315px;
-		margin: 0 18px 16px;
+		margin: 0 auto 16px;
+	}
+	.LoginPage > .login > .submit{
+		width: 100%;
 	}
 }
