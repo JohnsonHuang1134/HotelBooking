@@ -1,0 +1,354 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* ================================================================================== */
+/* HomePage */
+/* ================================================================================== */
+.HomePage, .Room, .LoginPage{
+	width: 1024px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+/* header */
+/* ================================================================================== */
+header{
+	width: 1024px;
+	height: 80px;
+	margin: 0 auto;
+	background-color: #f7c099;
+}
+header > a > img{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+header > nav{
+	float: right;
+}
+header > nav > a{
+	text-decoration: none;
+	font-weight: bold;
+	padding-right: 30px;
+	line-height: 80px;
+	color: #3F5D45;
+}
+header > div{
+	display: none;
+}
+header > #menuBtn{
+	display: none;
+}
+/* banner */
+/* ================================================================================== */
+.HomePage > #banner{
+	width: 1024px;
+	height: 500px;
+	background-image: url('../img/banner1.jpg');
+}
+.HomePage > #banner > .arrowButton{	
+	padding-top: 200px;
+}
+.HomePage > #banner > .arrowButton > a{
+	background-color: white;
+	opacity: 0;
+}
+.HomePage > #banner > .arrowButton > #bannerLeftArrow{
+	float: left;
+}
+.HomePage > #banner > .arrowButton > #bannerRightArrow{
+	float: right;
+}
+.HomePage > #banner > .arrowButton > a:hover{
+	opacity: 0.5;
+}
+/* popular */
+/* ================================================================================== */
+.HomePage > .popular, .HomePage > .discount{
+	width: 1024px;
+	height: 410px;
+	padding-top: 50px;
+}
+.HomePage > .popular > h2, .HomePage > .discount > h2{
+	border-bottom: solid 1px gray;
+	margin-bottom: 50px;
+}
+.HomePage > .popular > ul > li, .HomePage > .discount > ul > li{
+	width: 300px;
+	padding: 0 20px;
+	list-style: none;
+	float: left;
+}
+.HomePage > .popular > ul > li > img, .HomePage > .discount > ul > li > img{
+	width: 100%;
+	height: 200px;		
+}
+.HomePage > .popular > ul > li > span ,.HomePage > .discount > ul > li > span{
+	display: block;
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	color: #3F5D45;
+}
+.HomePage > .popular > ul > li > .roomStyle, .HomePage > .discount > ul > li > .roomStyle{
+	width: 59%;
+	border-right: solid 1px #EAF0ED;
+	border-left: solid 1px #EAF0ED;
+}
+.HomePage > .popular > ul > li > .roomPrice, .HomePage > .discount > ul > li > .roomPrice{
+	width: 40%;
+	border-right: solid 1px #EAF0ED;
+}
+.HomePage > .popular > ul > li > a, .HomePage > .discount > ul > li > a{
+	clear: both;
+	display: block;
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #3F5D45;
+	background-color: #EAF0ED;
+}
+/* discount */
+/* ================================================================================== */
+.HomePage > .discount{
+	padding-bottom: 50px;
+}
+/* footer */
+/* ================================================================================== */
+footer{
+	clear: both;
+	margin: 0 auto;
+	width: 1024px;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	background-color: #3F5D45;
+}
+/* ================================================================================== */
+/* Room Page*/
+/* ================================================================================== */
+.Room > .RoomBanner{
+	width: 1024px;
+	height: 500px;
+	background-size: 1024px 500px;
+	background-image: url('../img/productBanner .jpg');
+}
+/* categories */
+/* ================================================================================== */
+.Room > .categories, .Room > #RoomList{
+	padding-top: 60px;
+}
+.Room > .categories{
+	width: 300px;
+	height: 325px;
+	text-align: center;
+	float: left;
+}
+.Room .categories li{
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	border: 1px solid #EAF0ED;
+	border-top: 0;
+	font-size: 24px;
+	background-color: #3F5D45;
+	color: #EAF0ED;
+	list-style: none;
+}
+.Room > .categories > ul > a{
+	text-decoration: none;
+}
+.Room > .categories > ul > a > li{
+	background-color: #fff;
+	color: #3F5D45;
+}
+.Room > .categories > ul > a > li:hover{
+	background-color: #EAF0ED;
+}
+/* RoomList */
+/* ================================================================================== */
+.Room > #RoomList{
+	width: 720px;	
+	height: auto;
+	overflow: hidden;
+	float: left;
+}
+.Room > #RoomList > .section{
+	margin-left: 60px;
+	float: left;
+}
+.Room > #RoomList > .section > img{
+	display: block;
+	width: 300px;
+	height: 315px;
+}
+.Room > #RoomList > .section > .RoomInfo{
+	width: 298px;
+	height: 108px;
+	font-size: 20px;
+	color: #3F5D45;
+	border: 1px solid #EAF0ED;	
+}
+.Room > #RoomList > .section > .RoomInfo > span{
+	display: block;
+	width: 100%;
+	line-height: 54px;
+	text-align: center;
+	border-bottom: 1px solid #EAF0ED;
+}
+.Room > #RoomList > .section > a{
+	display: block;
+	width: 300px;
+	height: 65px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 65px;
+	text-decoration: none;
+	color: #3F5D45;
+	background-color: #EAF0ED;
+	text-align: center;	
+	margin-bottom: 20px;
+}
+.Room > #RoomList > .section > a:hover{
+	color: #EAF0ED;
+	background-color: #3F5D45;
+}
+/* ================================================================================== */
+/* Login Page*/
+/* ================================================================================== */
+.LoginPage{
+	width: 1024px;
+	height: 900px;
+}
+.LoginPage > .login{
+	width: 390px;
+	height: 380px;
+	background-color: #3F5D45;
+	margin: 60px auto;
+}
+.LoginPage > .login > h2{
+	font-size: 36px;
+	text-align: center;
+	color: #EAF0ED;
+	padding: 40px 0;
+}
+.LoginPage > .login > input{
+	display: block;
+	width: 330px;
+	height: 56px;
+	font-size: 16px;
+	margin: 0 auto 16px auto;
+}
+.ID{
+	background: url('../img/ID.png') no-repeat left center #EAF0ED;
+	padding-left: 20px;
+}
+.password{
+	background: url('../img/password.png') no-repeat left center #EAF0ED;
+	padding-left: 20px;
+}
+.LoginPage > .login > .submit{
+	display: block;
+	width: 390px;
+	height: 65px;
+	line-height: 65px;
+	margin-top: 57px;
+	font-size: 24px;
+	text-align: center;
+	color: #3F5D45;
+	font-weight: bold;
+	background-color: #FFE180;
+}
+/* ================================================================================== */
+/* RWD setting*/
+/* ================================================================================== */
+@media screen and (min-width: 415px) and (max-width: 1023px){
+	header{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 414px){
+	header{
+		width: 100%;
+		height: 40px;
+	}
+	header > a > img{
+		width: 40px;
+		height: 40px;
+	}
+	footer{
+		width: 100%;
+	}
+	header > nav{
+		display: none;
+	}
+	header > nav{
+		height: 160px;
+	}
+	header > div{
+		transition: height: 0.3s;
+	}
+	header > div.open{
+		height: 160px;		
+		display: block;
+		background-color: #f7c099;
+	}
+	header > div.open > a{
+		display: block;
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		line-height: 40px;
+		color: #3F5D45;
+		float: left;
+	}
+	header > #menuBtn{
+		display: block;
+	}
+	header > #menuBtn > img{
+		padding: 8px 0;
+		padding-right: 16px;
+		width: 24px;
+		height: 24px;
+		float: right;
+	}
+	.HomePage{
+		width: 100%;
+	}
+	.HomePage > #banner{
+		width: 375px;
+		height: 270px;
+		background-size: 375px 270px;
+	}
+	.HomePage > #banner > .arrowButton{	
+		padding-top: 100px;
+	}
+	.HomePage > #banner > .arrowButton > a{
+		opacity: 0.5;
+	}
+	.HomePage > #banner > .arrowButton > a > img{
+		width: 24px;
+		height: 24px;
+	}
+	.HomePage > .popular, .HomePage > .discount{
+		width: 100%;
+		height: 1070px;
+		padding-top: 30px;
+	}
+	.HomePage > .popular > h2, .HomePage > .discount > h2{
+		margin-bottom: 30px;
+	}
+	.HomePage > .popular > ul > li, .HomePage > .discount > ul > li{
+		padding-bottom: 20px;
+	}
+}

@@ -3,19 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hotel-Booking</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/main.css">		
 </head>
 <body>
+	<header>
+		<a href="index.html"><img src="img/logo.jpg"></a>
+		<a id="menuBtn"href="javascript:;"><img src="img/menuBtn.png"></a>
+		<nav>
+			<a href="index.html">首頁</a>
+			<a href="room.html">房型</a>
+			<a href="login.html">登入</a>
+		</nav>
+		<div>
+			<a href="index.html">首頁</a>
+			<a href="room.html">房型</a>
+			<a href="login.html">登入</a>
+		</div>		
+	</header>	
 	<div class="HomePage">
-		<header>
-			<a href="javascript:;"><img src="img/logo.jpg"></a>
-			<nav>
-				<a href="javascript:;">首頁</a>
-				<a href="javascript:;">房型</a>
-				<a href="javascript:;">登入</a>
-			</nav>
-		</header>
-
 		<div id="banner">
 			<div class="arrowButton">
 			<a id="bannerLeftArrow" href="javascript:;"><img src="img/left-arrow.png"></a>
@@ -74,10 +80,14 @@
 				</li>
 			</ul>				
 		</div>
-
-		<footer>
+	</div>		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="./js/mobileMenu.js"></script>
+  		<!-- <script src="js/loadPage.js"></script> -->
+	<footer>
 			&copy; Hotel-Booking.All Rights Reserved
-		</footer>
-	</div>
+	</footer>
 </body>
 </html>
