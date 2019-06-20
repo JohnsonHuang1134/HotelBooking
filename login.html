@@ -3,17 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hotel-Booking</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/main.css">		
 </head>
 <body>	
 	<header>
 		<a href="index.html"><img src="img/logo.jpg"></a>
+		<a id="menuBtn"href="javascript:;"><img src="img/menuBtn.png"></a>
 		<nav>
 			<a href="index.html">首頁</a>
 			<a href="room.html">房型</a>
 			<a href="login.html">登入</a>
 		</nav>
-	</header>
+		<div>
+			<a href="index.html">首頁</a>
+			<a href="room.html">房型</a>
+			<a href="login.html">登入</a>
+		</div>		
+	</header>	
 	<div class="LoginPage">
 		<div class="login">
 			<h2>會員登入</h2>
@@ -22,6 +29,10 @@
 			<p class="submit">登入</p>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="./js/mobileMenu.js"></script>
 	<footer>
 			&copy; Hotel-Booking.All Rights Reserved
 	</footer>
