@@ -12,34 +12,6 @@ window.onload = function(){
 	oTXG.addEventListener('click', displayTXG);
 	oTNN.addEventListener('click', displayTNN);
 
-	// ajax('get', 'HotelInfo.json', '', function(response){
-	// 	var RoomData = JSON.parse(response);
-	// 	var Hotel = RoomData.Hotel;
-
-	// 	for(var i = 0; i < Hotel.length; i++){
-	// 		createList(Hotel, i);		
-	// 	}
-
-	// });
-
-	// var request = new XMLHttpRequest();
-
-	// request.open('GET', 'HotelInfo.json', true);
-
-	// request.send();
-
-	// request.onreadystatechange = function(){
-	// 	if(request.readyState == 4){
-	// 		if(request.status == 200){
-	// 			var RoomData = JSON.parse(request.response);
-	// 			var Hotel = RoomData.Hotel;
-
-	// 			for(var i = 0; i < Hotel.length; i++){
-	// 				createList(Hotel, i);
-	// 				console.log(i);
-	// 			}
-	// 		}
-	// 	}
 	function ajax(method, url, args, successFn){
 		var request = window.XMLHttpRequest ? 
 		new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
@@ -80,32 +52,6 @@ window.onload = function(){
 		createList('TNN');
 	}
 
-	// function createList(Room, num){
-	// 	var oSection = document.createElement('div');
-	// 	oSection.className = 'section';
-	// 	oRoomList.appendChild(oSection);
-
-	// 	var oImg = document.createElement('img');
-	// 	oImg.src = Room[num].pic;
-	// 	oSection.appendChild(oImg);
-
-	// 	var oRoomInfo = document.createElement('div');
-	// 	oRoomInfo.className = 'RoomInfo';
-	// 	oSection.appendChild(oRoomInfo);
-
-	// 	var oName = document.createElement('span');
-	// 	oName.innerHTML = Room[num].Name;
-	// 	oRoomInfo.appendChild(oName);
-
-	// 	var oPrice = document.createElement('span');
-	// 	oPrice.innerHTML = Room[num].price;
-	// 	oRoomInfo.appendChild(oPrice);
-
-	// 	var oBooking = document.createElement('a');
-	// 	oBooking.href = "javascript:;";
-	// 	oBooking.innerHTML = '馬上預訂';
-	// 	oSection.appendChild(oBooking);
-	// }
 	function createList(position){
 		position = position || 'ALL';
 		$('.section').remove();
@@ -115,7 +61,7 @@ window.onload = function(){
 			var Hotel = RoomData.Hotel;
 
 			for(var i = 0; i < Hotel.length; i++){
-				if(Hotel[i].position == position || position == 'ALL'){						
+				if(Hotel[i].position == position || position == 'ALL'){
 					var oSection = document.createElement('div');
 					oSection.className = 'section';
 					oRoomList.appendChild(oSection);
@@ -140,7 +86,7 @@ window.onload = function(){
 					oBooking.href = "javascript:;";
 					oBooking.innerHTML = '馬上預訂';
 					oSection.appendChild(oBooking);	
-				}						
+				}
 			}
 
 		});	
