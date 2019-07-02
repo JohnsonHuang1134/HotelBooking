@@ -274,7 +274,7 @@ footer{
 /* ================================================================================== */
 /* RWD setting*/
 /* ================================================================================== */
-@media screen and (min-width: 415px) and (max-width: 1023px){
+@media screen and (min-width: 720px) and (max-width: 1023px){
 	header{
 		width: 100%;
 	}
@@ -336,7 +336,7 @@ footer{
 	}
 
 }
-@media screen and (max-width: 414px){
+@media screen and (max-width: 719px){
 	/* ================================================================================== */
 	/* phone*/
 	/* header*/
