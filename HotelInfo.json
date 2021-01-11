@@ -4,91 +4,91 @@
         "Name" : "台北怡亨酒店",
         "price" : "$4647",
         "pic" : "img/Taipei1.jpg",
-        "position": "TPE"
+        "position": "台北"
       },
       {
         "Name" : "福容大飯店(台北一館)",
         "price" : "$3775",
         "pic" : "img/Taipei2.jpg",
-        "position": "TPE"
+        "position": "台北"
       },
       {
         "Name" : "台北雀客旅館",
         "price" : "$2020",
         "pic" : "img/Taipei3.jpg",
-        "position": "TPE"
+        "position": "台北"
       },
       {
         "Name" : "台北北投漾館時尚溫泉",
         "price" : "$2735",
         "pic" : "img/Taipei4.jpg",
-        "position": "TPE"
+        "position": "台北"
       },
       {
         "Name" : "台北凱旋酒店",
         "price" : "$2281",
         "pic" : "img/Taipei5.jpg",
-        "position": "TPE"
+        "position": "台北"
       },
       {
         "Name" : "台中林酒店",
         "price" : "$4224",
         "pic" : "img/Taichung1.jpg",
-        "position": "TXG"
+        "position": "台中"
       },
       {
         "Name" : "台中福泰桔子商務旅館",
         "price" : "$802",
         "pic" : "img/Taichung2.jpg",
-        "position": "TXG"
+        "position": "台中"
       },
       {
         "Name" : "探索私旅",
         "price" : "$1635",
         "pic" : "img/Taichung3.jpg",
-        "position": "TXG"
+        "position": "台中"
       },
       {
         "Name" : "海灣藝術酒店",
         "price" : "$1785",
         "pic" : "img/Taichung4.jpg",
-        "position": "TXG"
+        "position": "台中"
       },
       {
         "Name" : "台中愛麗絲國際大飯店",
         "price" : "$1378",
         "pic" : "img/Taichung5.jpg",
-        "position": "TXG"
+        "position": "台中"
       },
       {
         "Name" : "台南永康桂田酒店",
         "price" : "$2365",
         "pic" : "img/Tainan1.jpg",
-        "position": "TNN"
+        "position": "台南"
       },
       {
         "Name" : "和逸飯店(台南西門館)",
         "price" : "$3045",
         "pic" : "img/Tainan2.jpg",
-        "position": "TNN"
+        "position": "台南"
       },
       {
         "Name" : "台南老爺行旅",
         "price" : "$2567",
         "pic" : "img/Tainan3.jpg",
-        "position": "TNN"
+        "position": "台南"
       },
       {
         "Name" : "台南家新大飯店",
         "price" : "$1799",
         "pic" : "img/Tainan4.jpg",
-        "position": "TNN"
+        "position": "台南"
       },
       {
         "Name" : "台南成大會館",
         "price" : "$2351",
         "pic" : "img/Tainan5.jpg",
-        "position": "TNN"
+        "position": "台南"
       }
     ]
 }

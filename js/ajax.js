@@ -1,16 +1,14 @@
 window.onload = function(){
 	var oRoomList = document.getElementById('RoomList');
-	createList('ALL');
+	createList('全部');
 
-	var oALL = document.getElementById('ALL');
-	var oTPE = document.getElementById('TPE');
-	var oTXG = document.getElementById('TXG');
-	var oTNN = document.getElementById('TNN');
-
-	oALL.addEventListener('click', function(){createList('ALL')});
-	oTPE.addEventListener('click', function(){createList('TPE')});
-	oTXG.addEventListener('click', function(){createList('TXG')});
-	oTNN.addEventListener('click', function(){createList('TNN')});
+	var link = document.querySelectorAll('#region > li');
+	for (let i =0; i < link.length; i++){
+		link[i].onclick = function (){
+			var btn_txt = link[i].innerHTML;
+			createList(btn_txt);
+		}
+	}
 
 	function ajax(method, url, args, successFn){
 		var request = window.XMLHttpRequest ?
@@ -39,21 +37,8 @@ window.onload = function(){
 		}
 	}
 
-	// function displayALL(){
-	// 	createList('ALL');
-	// }
-	// function displayTPE(){
-	// 	createList('TPE');
-	// }
-	// function displayTXG(){
-	// 	createList('TXG');
-	// }
-	// function displayTNN(){
-	// 	createList('TNN');
-	// }
-
 	function createList(position){
-		position = position || 'ALL';
+		position = position || '全部';
 		$('.section').remove();
 		console.log(position);
 		ajax('get', 'HotelInfo.json', '', function(response){
@@ -61,7 +46,7 @@ window.onload = function(){
 			var Hotel = RoomData.Hotel;
 
 			for(var i = 0; i < Hotel.length; i++){
-				if(Hotel[i].position == position || position == 'ALL'){
+				if(Hotel[i].position == position || position == '全部'){
 					var oSection = document.createElement('div');
 					oSection.className = 'section';
 					oRoomList.appendChild(oSection);
