@@ -1,6 +1,6 @@
 window.onload = function(){
 	var oRoomList = document.getElementById('RoomList');
-	displayALL();
+	createList('ALL');
 
 	var oALL = document.getElementById('ALL');
 	var oTPE = document.getElementById('TPE');
