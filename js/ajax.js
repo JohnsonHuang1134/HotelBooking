@@ -7,13 +7,13 @@ window.onload = function(){
 	var oTXG = document.getElementById('TXG');
 	var oTNN = document.getElementById('TNN');
 
-	oALL.addEventListener('click', displayALL);
-	oTPE.addEventListener('click', displayTPE);
-	oTXG.addEventListener('click', displayTXG);
-	oTNN.addEventListener('click', displayTNN);
+	oALL.addEventListener('click', function(){createList('ALL')});
+	oTPE.addEventListener('click', function(){createList('TPE')});
+	oTXG.addEventListener('click', function(){createList('TXG')});
+	oTNN.addEventListener('click', function(){createList('TNN')});
 
 	function ajax(method, url, args, successFn){
-		var request = window.XMLHttpRequest ? 
+		var request = window.XMLHttpRequest ?
 		new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
 		if(method == 'get' || method == 'GET'){
@@ -30,7 +30,7 @@ window.onload = function(){
 
 		request.onreadystatechange = function(){
 			if(request.readyState == 4){
-				if(request.status == 200){					
+				if(request.status == 200){
 					successFn & successFn(request.response);
 				}else{
 					alert('資料獲取失敗');
@@ -39,23 +39,23 @@ window.onload = function(){
 		}
 	}
 
-	function displayALL(){
-		createList('ALL');
-	}
-	function displayTPE(){
-		createList('TPE');
-	}
-	function displayTXG(){
-		createList('TXG');
-	}
-	function displayTNN(){
-		createList('TNN');
-	}
+	// function displayALL(){
+	// 	createList('ALL');
+	// }
+	// function displayTPE(){
+	// 	createList('TPE');
+	// }
+	// function displayTXG(){
+	// 	createList('TXG');
+	// }
+	// function displayTNN(){
+	// 	createList('TNN');
+	// }
 
 	function createList(position){
 		position = position || 'ALL';
 		$('.section').remove();
-		console.log(position);	
+		console.log(position);
 		ajax('get', 'HotelInfo.json', '', function(response){
 			var RoomData = JSON.parse(response);
 			var Hotel = RoomData.Hotel;
@@ -85,10 +85,10 @@ window.onload = function(){
 					var oBooking = document.createElement('a');
 					oBooking.href = "javascript:;";
 					oBooking.innerHTML = '馬上預訂';
-					oSection.appendChild(oBooking);	
+					oSection.appendChild(oBooking);
 				}
 			}
 
-		});	
+		});
 	}
 }
